@@ -2,10 +2,13 @@
 #include<stdlib.h>
 #include<string.h>
 #include<math.h>
+
+char quest[100],rem[100];
+char dataword[100],genpoly[100],trailz[100];
+int co=0,le=0;
 int main()
 {
     printf("Hello\n");
-    char dataword[100],genpoly[100],trailz[100];
     int ez=0,x=0;
     scanf("%s",&dataword);
     scanf("%s",&genpoly);
@@ -15,7 +18,16 @@ int main()
     trailz[1]='\0';
     for(x=0;x<ez;x++)
         strcat(dataword,trailz);
-    printf("\ndataword after trail-%s",dataword);
+    printf("\ndataword after trail-%s\n",dataword);
+    co=0;
 
     return(0);
 }
+
+void xord()
+{
+    le=strlen(genpoly);
+    substr(dataword,co,le)
+
+}
+

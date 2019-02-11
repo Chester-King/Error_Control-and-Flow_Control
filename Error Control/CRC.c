@@ -5,7 +5,7 @@
 
 char quest[100],rem[100];
 char dataword[100],genpoly[100],trailz[100];
-int co=0,le=0;
+int co=0,le=0,nord=0;
 int main()
 {
     printf("Hello\n");
@@ -18,16 +18,31 @@ int main()
     trailz[1]='\0';
     for(x=0;x<ez;x++)
         strcat(dataword,trailz);
-    printf("\ndataword after trail-%s\n",dataword);
     co=0;
+    xord();
 
     return(0);
 }
 
 void xord()
 {
+    int y=0,z=0;
     le=strlen(genpoly);
-    substr(dataword,co,le)
+    strcpy(rem,genpoly);
+    printf("\ndataword after trail-%s\n%d",dataword,le);
+    nord=strlen(dataword)-le+1;
+    co=-1;
+    for(y=0;y<nord;y++)
+    {
+        co++;
+        for(z=0;z<le;z++)
+        {
+
+        }
+
+    }
+
+    // substr(dataword,co,le);
 
 }
 
